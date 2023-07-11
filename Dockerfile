@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y openssh-server git openjdk-8-jdk gradle awscli
+    apt-get install -y openssh-server git default-jdk gradle awscli
 
 # Configure SSH
 RUN mkdir /var/run/sshd && \
